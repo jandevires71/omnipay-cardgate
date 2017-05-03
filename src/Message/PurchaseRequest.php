@@ -22,7 +22,7 @@ use Guzzle\Http\Exception\BadResponseException;
 class PurchaseRequest extends AbstractRequest
 {
 
-	protected $endpoint = '/rest/v1/';
+	protected $endpoint = 'payment/';
 
 	/**
 	 * (non-PHPdoc)
@@ -91,7 +91,7 @@ class PurchaseRequest extends AbstractRequest
 				'payment' => $data 
 		) );
 		
-		$this->httpClient->setBaseUrl( $this->getUrl() . $this->endpoint . $this->getPaymentMethod() . '/payment/' );
+		$this->httpClient->setBaseUrl( $this->getUrl() . $this->endpoint . $this->getPaymentMethod());
 		$request = $this->httpClient->post( null, null, $jsonData );
 		$request->setAuth( $this->getMerchantId(), $this->getApiKey() );
 		$request->setHeader( 'Content-type', 'application/json' );

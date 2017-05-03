@@ -21,7 +21,7 @@ use Guzzle\Http\Exception\BadResponseException;
 class CompletePurchaseRequest extends PurchaseRequest
 {
 
-	protected $endpoint = '/rest/v1/transactions/';
+	protected $endpoint = 'transaction/';
 
     /**
      * {@inheritdoc}

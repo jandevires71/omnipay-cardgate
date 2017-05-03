@@ -20,7 +20,7 @@ use Guzzle\Http\Exception\BadResponseException;
  */
 class FetchIssuersRequest extends AbstractRequest {
 
-    protected $endpoint = '/rest/v1/ideal/issuers/';
+    protected $endpoint = 'ideal/issuers/';
 
     /**
      * {@inheritdoc}

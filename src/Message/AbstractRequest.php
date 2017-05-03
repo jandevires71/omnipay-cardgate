@@ -26,9 +26,9 @@ abstract class AbstractRequest extends BaseAbstractRequest
     public function getUrl()
     {
         if ($this->getTestMode()) {
-            return 'https://api-test.cardgate.com';
+            return 'https://secure-staging.curopayments.net/rest/v1/curo/';
         } else {
-            return 'https://api.cardgate.com';
+            return 'https://secure.curopayments.net/rest/v1/curo/';
         }
     }
 

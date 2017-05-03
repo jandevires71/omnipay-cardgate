@@ -20,7 +20,7 @@ use Guzzle\Http\Exception\BadResponseException;
  */
 class FetchPaymentMethodsRequest extends AbstractRequest {
 
-    protected $endpoint = '/rest/v1/billingoptions/';
+    protected $endpoint = 'paymenttypes/';
 
     /**
      * {@inheritdoc}
